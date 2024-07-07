@@ -1,0 +1,3 @@
+[build]
+command = "npm run build --prefix frontend && npm run build --prefix backend"
+publish = "/path/to/frontend/build"  # Adjust this path based on your frontend build output
