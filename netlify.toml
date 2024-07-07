@@ -1,5 +1,5 @@
 [build]
-  command = "npm install -g vite && npm install --prefix Frontend && echo 'Frontend dependencies installed' && npm install --prefix backend && echo 'Backend dependencies installed' && npm run build --prefix Frontend && echo 'Frontend build completed' && npm run build --prefix backend && echo 'Backend build completed'"
+  command = "npm install --prefix Frontend && npm install --prefix backend && npm run build --prefix Frontend"
   publish = "Frontend/dist"
 
 [context.production.environment]
