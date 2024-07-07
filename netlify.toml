@@ -1,3 +1,9 @@
 [build]
-command = "npm run build --prefix Frontend && npm run build --prefix backend"
-publish = "Frontend/dist"
+  command = "npm run build --prefix Frontend && npm run build --prefix backend"
+  publish = "Frontend/dist"
+
+[context.production.environment]
+  NODE_ENV = "production"
+
+[functions]
+  directory = "netlify/functions"
