@@ -1,9 +1,11 @@
 [build]
-  command = "npm run build --prefix Frontend && npm run build --prefix backend"
+  command = "npm install --prefix Frontend && npm install --prefix backend && npm run build --prefix Frontend && npm run build --prefix backend"
   publish = "Frontend/dist"
 
 [context.production.environment]
   NODE_ENV = "production"
+  APIChatID = "32ca57aa-c888-4dba-8647-03a908cbfc2c"
+  API_ChatEngine = "a18b698d-9c5e-4466-b7a8-aecb1fd19a26"
 
 [functions]
   directory = "netlify/functions"
